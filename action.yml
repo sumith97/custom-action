@@ -19,16 +19,26 @@ runs:
     - name: Step 2
       run: echo "Goodbye"
       shell: bash
-    - name: Step 2
+
+    - name: Step 3
       run: pwd
       shell: bash
+
     - name: Step 3 using bash script
       run: |
         chmod +x ${{ github.action_path }}/script.sh
         ${{ github.action_path }}/./script.sh
       shell: bash
+
     - name: Step 4 using python script
       run: |
         chmod +x ${{ github.action_path }}/dist/script.py
         python ${{ github.action_path }}/dist/script.py
       shell: bash
+    
+    - name: Step 5 using javascript
+      run: |
+        chmod +x ${{ github.action_path }}/dist/index.js
+        node ${{ github.action_path }}/dist/index.js
+      shell: bash
+    
