@@ -43,6 +43,7 @@ runs:
       shell: bash
 
     - name: Check the inputs from work flow
-      run: echo "Input value: ${{ inputs.who-to-greet }}"
+      run: |
+        echo "Input value: ${{ inputs.who-to-greet }}"
       shell: bash
     
