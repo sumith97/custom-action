@@ -51,6 +51,6 @@ runs:
     
     - name: Check the outputs to work flow
       run: |
-        echo "Input value: ${{ outputs.time }}"
+        echo "time='Timesksdjk111'" >> $GITHUB_OUTPUT
       shell: bash
     
