@@ -20,8 +20,8 @@ async function run() {
     // Log the greeting
     console.log(`Hello ${nameToGreet} at ${time} yo are crazy fellow! and ${fun}`);
     console.log('Bro you are crazy there is still lot to learn in github actions. And I love this shit');
-    fs.appendFileSync(process.env.GITHUB_OUTPUT, `time=${time}\n`);
-fs.appendFileSync(process.env.GITHUB_OUTPUT, `fun=${fun}\n`);
+//     fs.appendFileSync(process.env.GITHUB_OUTPUT, `time=${time}\n`);
+// fs.appendFileSync(process.env.GITHUB_OUTPUT, `fun=${fun}\n`);
   } catch (error) {
     core.setFailed(error.message);
   }
