@@ -49,8 +49,13 @@ runs:
         echo "Input value: ${{ inputs.who-to-greet }}"
       shell: bash
     
-    - name: Check the outputs to work flow
+    - name: Setting outputs to work flow
       run: |
         echo "time='Timesksdjk111'" >> $GITHUB_OUTPUT
+        echo "fun='Hello, World!'" >> $GITHUB_OUTPUT
+      shell: bash
+    
+    - name: Debug - Show GITHUB_OUTPUT content
+      run: cat $GITHUB_OUTPUT
       shell: bash
     
