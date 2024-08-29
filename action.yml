@@ -8,6 +8,8 @@ inputs:
 outputs:
   time: # id of output
     description: 'The time we greeted the person'
+  fun:
+    description: 'Get the String'
 runs:
   using: 'node16'
   main: 'dist/index.js'

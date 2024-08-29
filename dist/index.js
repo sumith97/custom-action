@@ -9,7 +9,9 @@ async function run() {
 
     // Set the output named 'time'
     const time = (new Date()).toTimeString();
+    const fun= "Buffallo donkey !!!!!"
     core.setOutput("time", time);
+    core.setOutput("fun",fun);
 
     // Log the greeting
     console.log(`Hello ${nameToGreet} at ${time} yo are crazy fellow!`);
