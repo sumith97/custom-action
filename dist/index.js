@@ -1,5 +1,6 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
+const test = require('./test');
 
 async function run() {
   try {
@@ -24,3 +25,4 @@ async function race(){
 
 run();
 race();
+test.crazy();
