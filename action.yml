@@ -13,6 +13,14 @@ outputs:
 runs:
   using: 'composite'
   steps:
+    - name: List root directory
+      run: ls -la
+      shell: bash
+
+    - name: List dist directory
+      run: ls -la dist
+      shell: bash
+      
     - name: Run Node.js script
       run: node dist/index.js
       shell: bash
