@@ -23,5 +23,5 @@ runs:
       run: pwd
       shell: bash
     - name: Step 2
-      run: ./${{ github.action_path }}/script.sh
+      run: ${{ github.action_path }}/script.sh
       shell: bash
