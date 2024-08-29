@@ -11,7 +11,7 @@ async function run() {
     core.setOutput("time", time);
 
     // Log the greeting
-    console.log(`Hello ${nameToGreet} at ${time}!`);
+    console.log(`Hello ${nameToGreet} at ${time} yo are crazy fellow!`);
   } catch (error) {
     core.setFailed(error.message);
   }
