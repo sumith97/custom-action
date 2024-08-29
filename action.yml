@@ -11,5 +11,16 @@ outputs:
   fun:
     description: 'Get the String'
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+  using: 'composite'
+  steps:
+    - name: Run shell script
+      run: ./dist/script.sh
+      shell: bash
+
+    - name: Run Python script
+      run: python dist/script.py
+      shell: bash
+
+    - name: Run Node.js script
+      run: node dist/index.js
+      shell: bash
