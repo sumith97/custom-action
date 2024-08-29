@@ -14,7 +14,7 @@ async function run() {
     core.setOutput("fun",fun);
 
     // Log the greeting
-    console.log(`Hello ${nameToGreet} at ${time} yo are crazy fellow!`);
+    console.log(`Hello ${nameToGreet} at ${time} yo are crazy fellow! and ${fun}`);
     console.log('Bro you are crazy there is still lot to learn in github actions. And I love this shit');
   } catch (error) {
     core.setFailed(error.message);
