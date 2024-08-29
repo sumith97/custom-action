@@ -13,10 +13,5 @@ outputs:
 runs:
   using: 'composite'
   steps:
-    - name: Run Python script
-      run: python dist/script.py
-      shell: bash
-
     - name: Run Node.js script
       run: node dist/index.js
-      shell: bash
