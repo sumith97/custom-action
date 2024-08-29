@@ -5,7 +5,7 @@ const test = require('./test');
 async function run() {
   try {
     // Get the input named 'who-to-greet'
-    const nameToGreet = core.getInput('who-to-greet');
+    let nameToGreet = core.getInput('who-to-greet');
 
     if (!nameToGreet) {
         nameToGreet = process.env.INPUT_WHO_TO_GREET;
