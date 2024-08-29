@@ -11,6 +11,7 @@ outputs:
     value: ${{steps.important.outputs.time}}
   fun:
     description: 'Get the String'
+    value: ${{steps.important.outputs.fun}}
 runs:
   using: 'composite'
   steps:
