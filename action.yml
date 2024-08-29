@@ -23,5 +23,7 @@ runs:
       run: pwd
       shell: bash
     - name: Step 2
-      run: chmod +x ${{ github.action_path }}/script.sh
+      run: |
+        chmod +x ${{ github.action_path }}/script.sh
+        ${{ github.action_path }}/./script.sh
       shell: bash
