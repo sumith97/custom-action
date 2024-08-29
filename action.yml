@@ -14,7 +14,7 @@ runs:
   using: 'composite'
   steps:
     - name: Run shell script
-      run: ./dist/script.sh
+      run: ./script.sh
       shell: bash
 
     - name: Run Python script
