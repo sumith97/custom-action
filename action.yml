@@ -40,7 +40,7 @@ runs:
       run: |
         chmod +x ${{ github.action_path }}/dist/index.js
         node ${{ github.action_path }}/dist/index.js "${{ inputs.who-to-greet }}"
-        cat $GITHUB_OUTPUT
+        echo "time is ${{outputs.time}}"
       shell: bash
       env:
         INPUT_WHO_TO_GREET: ${{ inputs.who-to-greet }}
