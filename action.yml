@@ -41,6 +41,8 @@ runs:
         chmod +x ${{ github.action_path }}/dist/index.js
         node ${{ github.action_path }}/dist/index.js
       shell: bash
+      env:
+        INPUT_WHO_TO_GREET: ${{ inputs.who-to-greet }}
 
     - name: Check the inputs from work flow
       run: |
