@@ -15,3 +15,4 @@ runs:
   steps:
     - name: Run Node.js script
       run: node dist/index.js
+      shell: bash
