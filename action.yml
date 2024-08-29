@@ -22,11 +22,13 @@ runs:
     - name: Step 2
       run: pwd
       shell: bash
-    - name: Step 3
+    - name: Step 3 using bash script
       run: |
         chmod +x ${{ github.action_path }}/script.sh
         ${{ github.action_path }}/./script.sh
       shell: bash
-    - name: Step 4
-      run: ./script.sh
+    - name: Step 4 using python script
+      run: |
+        chmod +x ${{ github.action_path }}/dist/script.py
+        python ${{ github.action_path }}/dist/script.py
       shell: bash
