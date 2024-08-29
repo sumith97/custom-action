@@ -7,6 +7,10 @@ async function run() {
     // Get the input named 'who-to-greet'
     const nameToGreet = core.getInput('who-to-greet');
 
+    if (!nameToGreet) {
+        nameToGreet = process.env.INPUT_WHO_TO_GREET;
+      }
+
     // Set the output named 'time'
     const time = (new Date()).toTimeString();
     const fun= "Buffallo donkey !!!!!"

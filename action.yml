@@ -39,7 +39,7 @@ runs:
     - name: Step 5 using javascript
       run: |
         chmod +x ${{ github.action_path }}/dist/index.js
-        node ${{ github.action_path }}/dist/index.js
+        node ${{ github.action_path }}/dist/index.js "${{ inputs.who-to-greet }}"
       shell: bash
       env:
         INPUT_WHO_TO_GREET: ${{ inputs.who-to-greet }}
