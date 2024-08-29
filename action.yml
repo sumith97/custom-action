@@ -49,3 +49,8 @@ runs:
         echo "Input value: ${{ inputs.who-to-greet }}"
       shell: bash
     
+    - name: Check the outputs to work flow
+      run: |
+        echo "Input value: ${{ outputs.time }}"
+      shell: bash
+    
