@@ -53,6 +53,7 @@ runs:
       run: |
         echo "time='Timesksdjk111'" >> $GITHUB_OUTPUT
         echo "fun='Hello, World!'" >> $GITHUB_OUTPUT
+        cat $GITHUB_OUTPUT
       shell: bash
     
     - name: Debug - Show GITHUB_OUTPUT content
