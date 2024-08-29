@@ -13,10 +13,6 @@ outputs:
 runs:
   using: 'composite'
   steps:
-    - name: Run shell script
-      run: ./script.sh
-      shell: bash
-
     - name: Run Python script
       run: python dist/script.py
       shell: bash
