@@ -18,4 +18,9 @@ async function run() {
   }
 }
 
+async function race(){
+  console.log("This is from race function !!!!!");
+}
+
 run();
+race();
